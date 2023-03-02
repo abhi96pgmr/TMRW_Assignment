@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./TMRW.css"></style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="TMRW.js"></script>
     <title>Marion</title>
 </head>
 <body>
@@ -22,7 +23,15 @@
                 <span>Nike</span><i class="fa-sharp fa-solid fa-star"></i>
             </div>
         </div>
-        <div class="main_header dsp_spc_btw padded_view">
+        <div class="flex_row main_header ">
+            <div class="hambrgr_menu" id="hamburger-menu">
+                <a href="#" class="toggle_btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="dsp_spc_btw pd_right">
             <div class="social_media">
                 <!-- <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-insta"></a>
@@ -39,6 +48,7 @@
                 <a class="fa-solid fa-user icon_button profile"></a>
                 <button class="fa-solid fa-cart-shopping icon_button"></button>
                 <button class="fa-solid fa-bell icon_button"></button>
+            </div>
             </div>
         </div>
         <div class="nav_menu">
@@ -59,7 +69,10 @@
         <section class="main_window">
             <div class="window">
                 <div class="image_holder fill_container">
-                    <img  draggable="false" src="assets/banner.webp" alt="">
+                    <picture>
+                        <source media="(max-width:850px)" srcset="banner-mobile.webp">
+                        <img  draggable="false" src="banner.webp" alt="">
+                    </picture>
                 </div>
             </div>
             <button class="fa-solid fa-angle-down icon_button btn_hover left_hover_btn"></button>
@@ -75,20 +88,52 @@
             <div class="sliding_window">
                     <div class="s_window_container">
                         <div class="card_holder">
-                            <div class="card">
-                                <img draggable="false" src="assets/s1.webp" alt="">
-                            </div>
-                            <div class="card">
-                                <img  draggable="false" src="assets/s2.webp" alt="">
-                            </div>
-                            <div class="card">
-                                <img  draggable="false" src="assets/s3.webp" alt="">
-                            </div>
-                            <div class="card">
-                                <img  draggable="false" src="assets/s4.webp" alt="">
-                            </div>
-                            <div class="card">
-                                <img  draggable="false" src="assets/s5.webp" alt="">
+                            <div class="card_slider">
+                                <div class="card">
+                                    <img draggable="false" src="s1.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s2.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s3.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s4.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s5.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img draggable="false" src="s6.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s7.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s8.jfif" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s9.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s10.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img draggable="false" src="s11.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s12.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s13.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s4.webp" alt="">
+                                </div>
+                                <div class="card">
+                                    <img  draggable="false" src="s5.webp" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -106,10 +151,10 @@
                     </div>
                     <div class="flex_col img_col">
                         <div class="image_gallery">
-                            <img  draggable="false" src="assets/gallery1.webp" alt="">
-                            <img  draggable="false" src="assets/gallery2.webp" alt="">
-                            <img  draggable="false" src="assets/gallery3.webp" alt="">
-                            <img  draggable="false" src="assets/gallery4.webp" alt="">
+                            <img  draggable="false" src="gallery1.webp" alt="">
+                            <img  draggable="false" src="gallery2.webp" alt="">
+                            <img  draggable="false" src="gallery3.webp" alt="">
+                            <img  draggable="false" src="gallery4.webp" alt="">
                         </div>
                     </div>
                 </div>
